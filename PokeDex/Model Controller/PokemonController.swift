@@ -11,9 +11,9 @@ import UIKit
 
 class PokemonController {
     
-    func fetchPokemon(with searchTerm: String, completion: @escaping (Pokemon?, Error?) ->Void){
+    static func fetchPokemon(with searchTerm: String, completion: @escaping (Pokemon?, Error?) ->Void){
 //        let baseURL = URL(string: "https://pokeapi.co/api/v2/pokemon\(searchTerm.lowercased())")!
-        let baseURL = URL(string: "https://pokeapi.co/api/v2)")!
+        let baseURL = URL(string: "https://pokeapi.co/api/v2")!
         let pokemonComponent = baseURL.appendingPathComponent("pokemon")
         let finalURL = pokemonComponent.appendingPathComponent(searchTerm.lowercased())
         print(finalURL)
@@ -43,7 +43,7 @@ class PokemonController {
         }.resume()
     }
     
-    func fetchPokemonImage(with pokemon: Pokemon, completion: @escaping (UIImage?) -> Void){
+    static func fetchPokemonImage(with pokemon: Pokemon, completion: @escaping (UIImage?) -> Void){
         let finalURL = pokemon.sprites.imageURL
         
         URLSession.shared.dataTask(with: finalURL) { (data, _, error) in

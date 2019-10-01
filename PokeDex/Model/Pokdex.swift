@@ -9,6 +9,9 @@
 import Foundation
 
 struct Pokemon: Codable {
+    
+    //if error make an enum Codingkeys for all the properties
+    
     let name: String
     let id: Int
     let sprites: Sprite
@@ -16,10 +19,10 @@ struct Pokemon: Codable {
 }
 
 struct Sprite: Codable {
-    let imageURL: String
+    let imageURL: URL
     
     enum CodingKeys: String, CodingKey {
-        case imageURL = "front_Shiny"
+        case imageURL = "front_shiny"
     }
 }
 

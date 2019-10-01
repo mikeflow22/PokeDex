@@ -54,14 +54,38 @@
 		1B8C8F8D2343B94A00DE1ED3 /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
+				1B8C8FA22343B9C200DE1ED3 /* View Controller */,
+				1B8C8FA12343B9BC00DE1ED3 /* Views */,
+				1B8C8FA02343B9B300DE1ED3 /* Resources */,
+			);
+			path = PokeDex;
+			sourceTree = "<group>";
+		};
+		1B8C8FA02343B9B300DE1ED3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1B8C8F8E2343B94A00DE1ED3 /* AppDelegate.swift */,
-				1B8C8F902343B94A00DE1ED3 /* ViewController.swift */,
-				1B8C8F922343B94A00DE1ED3 /* Main.storyboard */,
 				1B8C8F952343B94A00DE1ED3 /* Assets.xcassets */,
 				1B8C8F972343B94A00DE1ED3 /* LaunchScreen.storyboard */,
 				1B8C8F9A2343B94A00DE1ED3 /* Info.plist */,
 			);
-			path = PokeDex;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1B8C8FA12343B9BC00DE1ED3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B8C8F922343B94A00DE1ED3 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B8C8FA22343B9C200DE1ED3 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B8C8F902343B94A00DE1ED3 /* ViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
